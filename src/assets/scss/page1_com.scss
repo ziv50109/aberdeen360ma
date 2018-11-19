@@ -1,0 +1,88 @@
+/* Common styles for page1 all popups */
+@import "variable";
+
+.popup {
+	.title {
+		text-align: center;
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 34px;
+	}
+	p {
+		text-align: justify;
+		max-width: 654px;
+		width: 100%;
+		line-height: 1.6;
+		margin: 0 auto;
+	}
+	.text {
+		margin-bottom: 24px;
+	}
+	p.chart-title {
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		color: #1b2a5a;
+		margin-bottom: 20px;
+	}
+	svg {
+		vertical-align: middle;
+		width: 81px;
+		height: 62px;
+		margin-right: 12px;
+	}
+	.chart-info {
+		font-size: 13px;
+		color: #999;
+	}
+}
+.popup1 .title { color: #f65275; }
+.popup2 .title { color: #58a618; }
+.popup3 .title { color: #008495; }
+.popup4 .title { color: #ffa300; }
+
+@media screen and (max-width: $mobileSize) {
+	.popup {
+		.title {
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+		.text { margin-bottom: 14px; }
+		p.chart-title {
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+		svg {
+			width: 122px;
+			height: 92px;
+			margin-right: 16px;
+		}
+		p.chart-info {
+			margin-bottom: 60px;
+			font-size: 24px;
+		}
+	}
+}
+
+@media screen and (max-width: $mobileSize2) {
+	.popup {
+		.title {
+			font-size: 36/750*100+vw;
+			margin-bottom: 10/750*100+vw;
+		}
+		.text { margin-bottom: 14/750*100+vw; }
+		p.chart-title {
+			font-size: 30/750*100+vw;
+			margin-bottom: 20/750*100+vw;
+		}
+		svg {
+			width: 122/750*100+vw;
+			height: 92/750*100+vw;
+			margin-right: 16/750*100+vw;
+		}
+		p.chart-info {
+			margin-bottom: 60/750*100+vw;
+			font-size: 24/750*100+vw;
+		}
+	}
+}

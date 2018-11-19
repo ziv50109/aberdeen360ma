@@ -1,0 +1,61 @@
+/* Common styles for all pages */
+@import "variable";
+
+.content_box {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	h3 {
+		text-align: center;
+		font-size: 36px;
+		font-weight: bold;
+		color: #00a2e4;
+		&.bg {
+			opacity: 0;
+		}
+	}
+	p {
+		line-height: 1.5;
+		font-size: 16px;
+		color: #444;
+	}
+}
+.popup_bg-show {
+	h3 { opacity: 0; }
+}
+.popup {
+	padding-top: 140px;
+}
+.fwb {
+	font-weight: bold;
+}
+.tac {
+	text-align: center;
+}
+
+@media screen and (max-width: $mobileSize) {
+	.content_box {
+		position: relative;
+		padding-top: 104px;
+		h3 { font-size: 54px; }
+		.text { font-size: 30px; }
+	}
+	.popup { padding-top: 90px; }
+}
+
+@media screen and (max-width: $mobileSize2) {
+	.content_box {
+		padding-top: 104/750*100+vw;
+		h3 { font-size: 54/750*100+vw; }
+		.text { font-size: 30/750*100+vw; }
+	}
+	.popup { padding-top: 90/750*100+vw; }
+}
